@@ -25,4 +25,4 @@
 - **Dark Mode**: Modern dark theme support with Windows 11 styling
 
 ## Souce code Dependancys
-	[MustangpeakEasyListView](https://github.com/pyscripter/MustangpeakEasyListView).
+*   [MustangpeakEasyListView](https://github.com/pyscripter/MustangpeakEasyListView)
