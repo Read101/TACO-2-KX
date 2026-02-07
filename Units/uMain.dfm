@@ -736,8 +736,8 @@ object frmMain: TfrmMain
     end
   end
   object dlgSaveJason: TSaveDialog
-    DefaultExt = '.Json'
-    Filter = '|*.Json'
+    DefaultExt = 'Json'
+    Filter = 'JSON files (*.json)|*.Json'
     Options = [ofHideReadOnly, ofNoChangeDir, ofEnableSizing]
     Title = 'KX JSon SaveAs'
     Left = 464

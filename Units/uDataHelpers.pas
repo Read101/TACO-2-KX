@@ -38,12 +38,13 @@ var
   Settings: TFormatSettings;
 begin
   // Parse a numeric string safely; fallback to 0 if invalid.
+  // Result is always rounded to a whole number.
   Settings := TFormatSettings.Create;
   Settings.DecimalSeparator := '.';
   Clean := Fix(Value);
   if not TryStrToFloat(Clean, Parsed, Settings) then
     Parsed := 0;
-  Result := TJSONNumber.Create(Parsed);
+  Result := TJSONNumber.Create(Round(Parsed));
 end;
 
 function JsonToPrettyString(const Value: string): string;
